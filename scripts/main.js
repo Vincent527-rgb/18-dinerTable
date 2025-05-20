@@ -126,7 +126,7 @@ function listNotes() {
     addition.sort((a, b) => a.table - b.table);
 
     // Création affichage
-    restaurant.commandes.forEach((commande) => {
+    addition.forEach((commande) => {
         // Creation éléments details
         const details = createElement("details", `${commande.table}`, "")
         const containerDetails = createElement("ul");
